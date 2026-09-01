@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FixNear - Find reliable local service providers near you.">
+  <title>FixNear | Find Local Service Providers</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="logo" href="index.html">Fix<span>Near</span></a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+
+  <nav id="navMenu">
+    <!-- These links stay here so the other team members can add their pages later. -->
+    <a class="active" href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="providers.html">Providers</a>
+    <a href="request.html">Request Service</a>
+    <a href="account.html" class="nav-btn">Account</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">LOCAL HELP, MADE EASY</p>
+      <h1>Find the right person to <span>fix it.</span></h1>
+      <p class="hero-text">
+        Connect with local plumbers, electricians, mechanics, cleaners
+        and technicians in a few simple steps.
+      </p>
+
+      <div class="hero-actions">
+        <a href="services.html" class="btn primary">Find a Service</a>
+        <a href="account.html?mode=provider" class="btn secondary">Become a Provider</a>
+      </div>
+
+      <div class="search-box">
+        <input id="homeSearch" type="text" placeholder="What service do you need?">
+        <button id="homeSearchBtn">Search</button>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="mini-icon">🔧</div>
+      <h3>Reliable local help</h3>
+      <p>Browse providers, compare basic information and send a request directly.</p>
+
+      <div class="mini-provider">
+        <div class="avatar">JN</div>
+        <div>
+          <strong>John N.</strong>
+          <small>Electrician · ⭐ 4.8</small>
+        </div>
+        <span>›</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">WHAT DO YOU NEED?</p>
+        <h2>Popular services</h2>
+      </div>
+      <a href="services.html">View all →</a>
+    </div>
+
+    <div class="service-grid">
+      <a class="service-card" href="providers.html?service=Plumbing">
+        <span>🔧</span>
+        <h3>Plumbing</h3>
+        <p>Repairs & installations</p>
+      </a>
+
+      <a class="service-card" href="providers.html?service=Electrical">
+        <span>⚡</span>
+        <h3>Electrical</h3>
+        <p>Wiring & repairs</p>
+      </a>
+
+      <a class="service-card" href="providers.html?service=Auto%20Repair">
+        <span>🚗</span>
+        <h3>Auto Repair</h3>
+        <p>Vehicle maintenance</p>
+      </a>
+
+      <a class="service-card" href="providers.html?service=Phone%20Repair">
+        <span>📱</span>
+        <h3>Phone Repair</h3>
+        <p>Phone troubleshooting</p>
+      </a>
+
+      <a class="service-card" href="providers.html?service=Computer%20Repair">
+        <span>💻</span>
+        <h3>Computer Repair</h3>
+        <p>PC & laptop support</p>
+      </a>
+
+      <a class="service-card" href="providers.html?service=Cleaning">
+        <span>🧹</span>
+        <h3>Cleaning</h3>
+        <p>Home & office cleaning</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="section light">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">HOW IT WORKS</p>
+        <h2>Three simple steps</h2>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <b>01</b>
+        <h3>Choose a service</h3>
+        <p>Select the type of help you need.</p>
+      </div>
+
+      <div class="step">
+        <b>02</b>
+        <h3>Choose a provider</h3>
+        <p>Review profiles, prices and ratings.</p>
+      </div>
+
+      <div class="step">
+        <b>03</b>
+        <h3>Send a request</h3>
+        <p>Tell the provider what you need and when.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">FEATURED</p>
+        <h2>Popular providers</h2>
+      </div>
+      <a href="providers.html">See providers →</a>
+    </div>
+
+    <div class="provider-grid">
+
+      <article class="provider-card">
+        <div class="provider-top">
+          <div class="avatar">JN</div>
+          <div>
+            <h3>John N. <span class="verified">✓ Verified</span></h3>
+            <p class="muted">Electrician · Bamenda</p>
+          </div>
+        </div>
+        <p class="provider-description">Electrical installation, wiring and home repairs.</p>
+        <div class="provider-info">
+          <span>⭐ 4.8</span>
+          <span>From 10,000 FCFA</span>
+        </div>
+        <a href="providers.html?provider=1" class="btn primary full">View Provider</a>
+      </article>
+
+      <article class="provider-card">
+        <div class="provider-top">
+          <div class="avatar">MT</div>
+          <div>
+            <h3>Mary T. <span class="verified">✓ Verified</span></h3>
+            <p class="muted">Cleaner · Bamenda</p>
+          </div>
+        </div>
+        <p class="provider-description">Home and small office cleaning services.</p>
+        <div class="provider-info">
+          <span>⭐ 4.7</span>
+          <span>From 8,000 FCFA</span>
+        </div>
+        <a href="providers.html?provider=2" class="btn primary full">View Provider</a>
+      </article>
+
+      <article class="provider-card">
+        <div class="provider-top">
+          <div class="avatar">PA</div>
+          <div>
+            <h3>Paul A. <span class="verified">✓ Verified</span></h3>
+            <p class="muted">Auto Repair · Bamenda</p>
+          </div>
+        </div>
+        <p class="provider-description">General vehicle inspection and maintenance.</p>
+        <div class="provider-info">
+          <span>⭐ 4.6</span>
+          <span>From 15,000 FCFA</span>
+        </div>
+        <a href="providers.html?provider=3" class="btn primary full">View Provider</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="cta">
+    <div>
+      <p class="eyebrow">JOIN FIXNEAR</p>
+      <h2>Need a service? Start here.</h2>
+      <p>Find a local professional without the stress.</p>
+    </div>
+    <a href="services.html" class="btn primary">Explore Services</a>
+  </section>
+
+</main>
+
+<footer>
+  <div>
+    <a class="logo footer-logo" href="index.html">Fix<span>Near</span></a>
+    <p>Local services, one simple place.</p>
+  </div>
+
+  <div>
+    <strong>Quick links</strong>
+    <a href="services.html">Services</a>
+    <a href="providers.html">Providers</a>
+    <a href="request.html">Request service</a>
+    <a href="account.html">Account</a>
+  </div>
+
+  <div>
+    <strong>Contact</strong>
+    <p>support@fixnear.demo</p>
+    <p>+237 600 000 000</p>
+  </div>
+</footer>
+
+<div class="copyright">© 2026 FixNear. Student project demo.</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
