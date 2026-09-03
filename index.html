@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DORIS KEH | Service Request</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            <h2>Fix<span>Near</span>
+            </h2>
+            
+        </div>
+
+
+        <!-- Desktop Navigation -->
+        <nav class="navbar" id="navbar">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Providers</a>
+            <a href="#Requests Service">My Requests</a>
+            <a href="#">Contact</a>
+            <button class="cta-btn">Account</button>
+        </nav>
+
+
+        <!-- Hamburger Menu -->
+        <button class="hamburger" id="hamburger">
+            ☰
+        </button>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-container">
+         <div class="container-idear">
+        <p class="idea">Request</p>
+        <h1>Request a service </h1>
+        <p>Give the provider enough information to  understand your job.</p>
+        </div>
+
+
+        <!-- SERVICE REQUEST SECTION -->
+
+        <section class="request-section">
+
+            <h1>Service Request</h1>
+
+            <div class="title-line"></div>
+
+
+            <form id="requestForm">
+
+
+                <!-- Service -->
+
+                <div class="form-group">
+
+                    <label for="service">
+                        Service
+                    </label>
+
+                    <input
+                        type="text"
+                        id="service"
+                        value="Electrical Repair"
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- Provider -->
+
+                <div class="form-group">
+
+                    <label for="provider">
+                        Provider
+                    </label>
+
+                    <input
+                        type="text"
+                        id="provider"
+                        value="John N."
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- Name -->
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- Phone -->
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- Location -->
+
+                <div class="form-group">
+
+                    <label for="location">
+                        Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        placeholder="Enter your location"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- Description -->
+
+                <div class="form-group">
+
+                    <label for="description">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="description"
+                        placeholder="Describe the electrical problem..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- Preferred Date -->
+
+                <div class="form-group">
+
+                    <label for="date">
+                        Preferred Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- Submit Button -->
+
+                <button
+                    type="submit"
+                    class="send-button"
+                    id="submitButton"
+                >
+                    Send Request
+                </button>
+
+
+            </form>
+
+
+            <!-- Success Message -->
+
+            <div
+                class="success-message"
+                id="successMessage"
+            >
+                ✅ Request sent successfully!
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================= MY REQUESTS ================= -->
+
+        <section
+            class="my-requests"
+            id="myRequests"
+        >
+
+            <h2>My Requests</h2>
+
+            <div class="title-line"></div>
+
+
+            <div class="request-card">
+
+
+                <div class="request-card-header">
+
+                    <h3 id="displayService">
+                        Electrical Repair
+                    </h3>
+
+
+                    <span class="pending">
+                        Pending
+                    </span>
+
+                </div>
+
+
+
+                <div class="request-info">
+
+                    <p>
+                        <strong>Provider:</strong>
+
+                        <span id="displayProvider">
+                            John N.
+                        </span>
+                    </p>
+
+
+                    <p>
+                        <strong>Name:</strong>
+
+                        <span id="displayName"></span>
+                    </p>
+
+
+                    <p>
+                        <strong>Phone:</strong>
+
+                        <span id="displayPhone"></span>
+                    </p>
+
+
+                    <p>
+                        <strong>Location:</strong>
+
+                        <span id="displayLocation"></span>
+                    </p>
+
+
+                    <p>
+                        <strong>Preferred Date:</strong>
+
+                        <span id="displayDate"></span>
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <script src="index.js"></script>
+
+</body>
+</html>
